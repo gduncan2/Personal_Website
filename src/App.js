@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Hi I am Grant
+          Hi I am Grant Duncan
         </a>
       </header>
     </div>
