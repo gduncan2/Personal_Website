@@ -1,0 +1,70 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header_container {
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+/* Cta Button */
+.cta { 
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/* Header Social Icons */
+.HSoc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+.HSoc::after{
+    content: "";
+    width: 2px;
+    height: 32px;
+    background: var(--color-primary);
+}
+
+/* Pic */
+
+.Headshot {
+    background: linear-gradient(var(--color-bg-variant),transparent);
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 11rem 11rem 0rem 0rem;
+    overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
+/* Med */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 68vh;
+        width: auto;
+    }
+}
+
+/* Small */
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+        width: auto;
+    }
+    .HSoc{
+        display: none;
+    }
+}

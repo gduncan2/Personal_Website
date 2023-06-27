@@ -36,8 +36,9 @@ body {
     font-family: 'Inconsolata', monospace;
     background: var(--color-bg);
     color: var(--color-white);
-    line-height: 1.5;
+    line-height: 1.7;
     background-image: url(../src/assets/Texture.png);
+    background-size: contain;
 }
 
 .container {
@@ -49,10 +50,21 @@ h1,h2,h3,h4,h5{
     color: var(--color-primary);
 }
 h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h5 {
+    font-size: 1.5rem;
+}
+
 section {
     margin-top: 8rem;
+    height: 100vh;
 }
 section > h2,
 section > h5{
@@ -71,18 +83,19 @@ section > h2 {
 
 a {
     color: var(--color-primary);
-    transition: var(--transition)
+    transition: var(--transition);
 }
 a:hover {
     color: var(--color-white);
 }
 .btn {
-    width: max-content;
+    width: max-content+5px;
     display: inline-block;
     color:  var(--color-primary);
-    padding: 0.4 rem;
+    padding: 0.5rem;
     cursor: pointer;
-    border: 1px solid var(--color-primary);
+    border: 5px solid var(--color-primary);
+    border-style: inset;
     transition:  var(--transition);
 }
 
