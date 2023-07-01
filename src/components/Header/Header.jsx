@@ -7,8 +7,8 @@ import Headshot from '../../assets/Headshot.PNG'
 const Header = () => {
   return (
     <header id = 'Header'>
+      
       <div className="container header_container">
-        <h5> I Am</h5>
         <h1>Grant Duncan</h1>
         <h5 className ="text-light">Computer Engineering Student</h5>
         <CTA />

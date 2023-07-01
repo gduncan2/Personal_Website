@@ -38,6 +38,10 @@ body {
     color: var(--color-white);
     line-height: 1.7;
     background-image: url(../src/assets/Texture.png);
+    background-image: url(../src/assets/Texture.png),
+    linear-gradient(75deg, #070031cc, rgba(255,0,0,0) 70.71%),
+    linear-gradient(220deg, rgba(0, 139, 173, 0.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(360deg, rgba(136, 102, 11, 0.8), rgba(113, 113, 255, 0) 70.71%);
     background-size: contain;
 }
 
