@@ -5,7 +5,7 @@ import About from './components/About/About'
 import Contact from './components/Contact/Contact'
 import Nav from './components/Nav/Nav'
 import Experience from './components/Experience/Experience'
-
+import Projects from './components/Projects/Projects'
 
 const App = () => {
   return (
@@ -14,6 +14,7 @@ const App = () => {
       <Nav />
       <About />
       <Experience />
+      <Projects />
       <Contact />
       <Footer />
     </>

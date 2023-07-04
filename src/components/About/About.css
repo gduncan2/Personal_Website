@@ -1,0 +1,110 @@
+.about_container{
+    display:grid;
+    grid-template-columns: 30% 53%;
+    gap: 10%;
+    position: relative;
+    left: 3rem;
+    top: 2rem;
+}
+.about_me{
+    width: 90%;
+    height: 100%;
+    border-radius: 1.7rem;
+    background: linear-gradient(45deg, transparent,var(--color-gold),transparent);
+    display:grid;
+    place-items: center;
+    position: relative;
+    left: 6rem;
+}
+
+.about_me_img{
+    border-radius: 1.7rem;
+    width: 90%;
+    overflow: hidden;
+    transition: var(--transition);
+    transform: rotate(10deg) ;
+}
+.about_me_img:hover{
+    transition: var(--transition);
+    transform: rotate(0deg) ;
+}
+.cards{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    position: relative;
+    right: 1rem;
+}
+.card{
+    background: var(--color-bg-variant);
+    border: 1px solid var(--color-primary);
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    transition: var(--transition);
+}
+.card:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor:default;
+}
+.about_icon{
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.card h5{
+    font-size: 1.5rem;
+}
+.card small{
+    font-size: 1rem;
+    color: var(--color-light);
+}
+
+.about_content p{
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    margin: 2rem 0 2.5rem;
+    color: var(--color-light);
+    position: relative;
+    right: 1rem;
+}
+.btn-primary{
+    position: relative;
+    right: 1rem;
+}
+
+/* Med */
+@media screen and (max-width: 1024px) {
+    .about_container{
+        grid-template-coulmns: 1fr;
+        gap: 0;
+    }
+    .about_me{
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+    .about_content p{
+        margin:1rem 0 1.5rem;
+    }
+}
+
+/* Small */
+
+@media screen and (max-width: 600px) {
+    .about_me{
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+    .about_cards p{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .about_content{
+        text-align: center;
+    }
+    .about_content p{
+       margin: 1.5rem 0;
+    }
+}
