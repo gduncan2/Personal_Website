@@ -1,6 +1,6 @@
 header {
     height: 100vh;
-    padding-top: 7rem;
+    padding-top: 5rem;
     overflow: hidden;
 }
 
@@ -63,10 +63,16 @@ header {
 
 @media screen and (max-width: 600px) {
     header {
-        height: 100vh;
+        height: 90vh;
         width: auto;
     }
     .HSoc{
         display: none;
+    }
+    .header_container h1{
+        font-size: 2rem;
+    }
+    .header_container h5{
+        font-size: 1rem;
     }
 }
