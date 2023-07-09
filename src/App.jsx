@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
 import About from './components/About/About'
 import Contact from './components/Contact/Contact'
 import Nav from './components/Nav/Nav'
@@ -16,7 +15,6 @@ const App = () => {
       <Experience />
       <Projects />
       <Contact />
-      <Footer />
     </>
   )
 }

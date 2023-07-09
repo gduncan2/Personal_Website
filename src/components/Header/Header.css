@@ -61,7 +61,7 @@ header {
 
 /* Small */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     header {
         height: 90vh;
         width: auto;
@@ -74,5 +74,15 @@ header {
     }
     .header_container h5{
         font-size: 1rem;
+    }
+    .cta{
+        display: grid;
+    }
+    .Headshot {
+        height: 40%;
+        width: 70%;
+        left:20%;
+        position: sticky;
+        justify-content: center;
     }
 }
